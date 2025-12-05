@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Pig Dice Game</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<h1>Pig Dice Game</h1>
+
+<div id="setup">
+    <input id="player1Name" placeholder="Spelare 1 namn">
+    <input id="player2Name" placeholder="Spelare 2 namn">
+    <button onclick="startGame()">Starta spelet</button>
+</div>
+
+<div id="game" style="display:none;">
+
+    <h2 id="currentPlayer"></h2>
+
+    <p><strong>Tärning:</strong> <span id="dice">-</span></p>
+    <p><strong>Omgångens poäng:</strong> <span id="roundScore">0</span></p>
+    <p><strong>Totala poäng:</strong></p>
+
+    <p id="p1score"></p>
+    <p id="p2score"></p>
+
+    <p><strong>Antal omgångar:</strong> <span id="rounds">0</span></p>
+
+    <button onclick="rollDice()">Kasta tärningen</button>
+    <button onclick="hold()">Frys poängen</button>
+
+</div>
+
+<h2 id="winner"></h2>
+
+<script src="script.js"></script>
+</body>
+</html>
