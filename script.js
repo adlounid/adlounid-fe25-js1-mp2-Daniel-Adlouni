@@ -70,9 +70,9 @@ function updateUI() {
 }
 document.addEventListener("keydown", function (e) {
     if (e.key === "Enter") {
-        // Kontrollera att vi fortfarande är i setup-läget
         if (document.getElementById("setup").style.display !== "none") {
             startGame();
         }
     }
+
 });
