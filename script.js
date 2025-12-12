@@ -68,11 +68,7 @@ function updateUI() {
     document.getElementById("p2score").innerText = players[1] + ": " + scores[1] + " poäng";
     document.getElementById("rounds").innerText = rounds;
 }
-document.addEventListener("keydown", function (e) {
-    if (e.key === "Enter") {
-        if (document.getElementById("setup").style.display !== "none") {
-            startGame();
-        }
-    }
-
+document.getElementById("setupForm").addEventListener("submit", function(e) {
+    e.preventDefault(); 
+    startGame();         
 });
